@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8060:8060"
+    environment:
+      - PORT=8060
+      - MONGODB_URL= mongodb+srv://esalapriyanath:x6IK8Nylp8nGUYOb@cluster0.d3xrv4m.mongodb.net/?retryWrites=true&w=majority

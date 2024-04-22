@@ -1,0 +1,375 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Navbar container styles */
+.navbar {
+    background-image: linear-gradient(rgb(159, 235, 112), rgb(255, 255, 255),rgb(159, 235, 112));
+    color: #000000;
+    padding: 10px 10px;
+    box-shadow: 5px 5px 20px 2px;
+}
+
+/* Navbar menu styles */
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+
+.navbar-item {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.navbar-link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    color:#8f61fb;
+}
+
+/* Active link styles */
+.active {
+    color: rgb(0, 0, 0); /* You can change this color to your preference */
+    font-weight: bold;
+}
+
+/* Home.css */
+.table {
+  width: 80%;
+  margin-left: 120px;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007BFF;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #FFD700; /* Change this to your preferred hover color */
+}
+
+.create-user-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-user-form h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.create-user-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-user-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.create-user-form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.create-button:hover {
+  background-color: #0056b3;
+}
+
+/* App.css or a separate CSS file */
+.delete-button {
+  background-color: #ff4d4d; /* Red background color */
+  color: #fff; /* White text color */
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #ff3333; /* Darker red on hover */
+}
+
+/* Add these styles to your CSS to make the Login component colorful */
+
+.colorful-login {
+  background-color: #f0f1da; /* Background color for the login container */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  opacity: 80%;
+}
+
+.colorful-input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #007BFF; /* Blue border for input fields */
+  border-radius: 5px;
+}
+
+.colorful-button {
+  background-color: #007BFF; /* Blue background color for the login button */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.colorful-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.colorful-log {
+  color: #007BFF; /* Blue text color for the log message */
+}
+
+.login-container {
+  background-image: url('./images/wall.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; /* Set the height to cover the entire viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-container {
+  background-image: url('./images/aaaa.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.green-container {
+  background-image: url('./images/back.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 84.9vh; /* Set the height to cover the entire viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* App.css or a separate CSS file */
+
+/* Style the plant container to display two boxes in a row */
+.plant-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+/* Style individual plant boxes */
+.plant-item {
+  box-shadow: 5px 5px 10px 2px;
+  border-radius: 30px;
+  
+  border: 1px solid #000000;
+  background-color:#c8e8a4;
+  padding: 10px;
+  width: 60%; /* Adjust the width to fit two boxes in a row with a small gap */
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Style the quantity controls within each box */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the buttons for quantity control */
+.btn-secondary {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px; /* Add spacing between buttons */
+}
+
+/* Style the "Add to Cart" button */
+.btn-primary {
+  background-color: #610592; /* Green background color */
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.HomeBack{
+  background-color:#a5fee2;
+}
+.PlantItem{
+  background-color: #e0e6e1;
+}
+.about-container {
+  background-image: url('./images/a.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-left: 20px;
+  width: 1480px;
+  height: 488px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AB{
+  background-image: url('./images/close-up-green-bush.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh; /* Set the height to cover the entire viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.HomeBack {
+  background-image: url('./images/about.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px;
+  color: white;
+}
+
+.plant-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+
+.plant-item {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 400px;
+  text-align: center;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.plant-item img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-controls button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.quantity-controls button:hover {
+  background-color: #0056b3;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #1f9239;
+}
+
+/* Adjust other styles as needed */
